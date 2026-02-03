@@ -12,7 +12,6 @@ class Multimedia{
         return this.views;
     }
     calcularCostServer() {
-        this.durada * 0.01;
+        return (this.durada * 0.01);
     }
 }
-    
