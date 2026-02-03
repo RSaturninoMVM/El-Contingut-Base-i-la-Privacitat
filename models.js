@@ -1,17 +1,18 @@
 class Multimedia{
-    Constructor(titol, durada, views) {
+    Constructor( titol, durada, #views) {
         this.titol = titol;
         this.durada = 60;
-        this.views = 0;
+        this.#views = 0;
+        this.#calcularCostServer();
     }
-    play() {
+    play(views) {
         console.log("Reproduint ...");
-        return (this.views + 1);
+        return (this.#views + 1);
     }
-    getViews() {
-        return this.views;
+    getViews(views) {
+        return this.#views;
     }
-    calcularCostServer() {
+    #calcularCostServer(durada) {
         return (this.durada * 0.01);
     }
 }
