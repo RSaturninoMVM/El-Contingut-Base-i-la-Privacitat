@@ -6,7 +6,7 @@ class Multimedia{
     }
     play() {
         console.log("Reproduint ...");
-        this.views + 1;
+        return (this.views + 1);
     }
     getViews() {
         return this.views;
