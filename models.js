@@ -1,18 +1,36 @@
 class Multimedia{
-    Constructor( titol, durada, #views) {
+    Constructor(titol, durada, #views) {
         this.titol = titol;
         this.durada = 60;
         this.#views = 0;
-        this.#calcularCostServer();
     }
-    play(views) {
+    play() {
         console.log("Reproduint ...");
         return (this.#views + 1);
     }
-    getViews(views) {
+    getViews() {
         return this.#views;
     }
-    #calcularCostServer(durada) {
+    #calcularCostServer() {
         return (this.durada * 0.01);
+    }
+}
+class Pelicula{
+    Constructor(any, costFix) {
+        this.any = any;
+        this.costFix = costFix;
+    }
+    calcularRoyalties(views, costFix) {
+        return (#views * costFix);
+    }
+}
+class Serie{
+    Constructor(cap1, cap2, cap3) {
+        this.cap1 = cap1;
+        this.cap2 = cap2;
+        this.cap3 = cap3;
+    }
+    calcularRoyalties() {
+        return (views * cap * 0.05)
     }
 }
