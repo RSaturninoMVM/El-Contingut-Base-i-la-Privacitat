@@ -21,7 +21,7 @@ class Pelicula{
         this.costFix = costFix;
     }
     calcularRoyalties(views, costFix) {
-        return (#views * costFix);
+        return (views * costFix);
     }
 }
 class Serie{
