@@ -15,7 +15,7 @@ class Multimedia{
         return (this.durada * 0.01);
     }
 }
-class Pelicula{
+class Pelicula extends Multimedia{
     Constructor(any, costFix) {
         this.any = any;
         this.costFix = costFix;
@@ -24,7 +24,7 @@ class Pelicula{
         return (views * costFix);
     }
 }
-class Serie{
+class Serie extends Multimedia{
     Constructor(cap1, cap2, cap3) {
         this.cap1 = cap1;
         this.cap2 = cap2;
